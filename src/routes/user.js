@@ -1,8 +1,6 @@
 const express = require("express");
 const userRouter = express.Router();
-const { check, validationResult } = require("express-validator");
-const db = require("../../db/connection");
-const { User, Show } = require("../../models/index");
+const { User } = require("../../models/index");
 userRouter.use(express.json());
 userRouter.use(express.urlencoded());
 
